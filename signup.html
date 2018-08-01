@@ -1,0 +1,41 @@
+  <!doctype>
+  <!DOCTYPE html>
+  <html>
+  
+  
+  <body>
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  <script src="signup2.js"></script>
+
+  <div class="container">
+    <div class="col-md-6">
+    <div id="logbox">
+      <form id="signup" method="post" onclick="submitFunction()" action="/tam.html">
+        <h1>create an account</h1>
+        <input name="user[name]" type="text" placeholder="What's your username?" pattern="^[\w]{3,16}$" autofocus="autofocus" required="required" class="input pass"/>
+
+        <input id="password" name="user[password]" type="password" placeholder="Choose a password" required="required" class="input pass"/>
+        <input id="password2" name="user[password2]" type="password" placeholder="Confirm password" required="required" class="input pass"/>
+        <input name="user[email]" type="email" placeholder="Email address" class="input pass"/>
+        <input type="submit" class="inputButton" value="Sign me up!"/>
+      </form>
+    </div>
+   </div>
+    <!--col-md-6-->
+    
+   <div class="col-md-6">
+    <div id="logbox">
+      <form id="signup" method="post" action="/tam.html">
+        <h1>account login</h1>
+        <input name="user[email]" type="email" placeholder="enter your email" class="input pass"/>
+        <input name="user[password]" type="password" placeholder="enter your password" required="required" class="input pass"/>
+        <input type="submit" value="Sign me in!" class="inputButton"/>
+        <div class="text-center"">
+                    <a href="#" id="">forgot password</a>
+                </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  </body>
+  </html>
